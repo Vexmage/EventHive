@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qaOfvPAO1gE=",
+  "dgSpecHash": "Lo3tKxlrXA0=",
   "success": true,
   "projectFilePath": "C:\\Users\\namxe\\Documents\\Devel\\EventHive\\EventHive.csproj",
   "expectedPackageFiles": [
@@ -71,8 +71,7 @@
     "C:\\Users\\namxe\\.nuget\\packages\\system.reflection.metadata\\7.0.0\\system.reflection.metadata.7.0.0.nupkg.sha512",
     "C:\\Users\\namxe\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\namxe\\.nuget\\packages\\system.text.json\\9.0.0\\system.text.json.9.0.0.nupkg.sha512",
-    "C:\\Users\\namxe\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
-    "C:\\Users\\namxe\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\9.0.0\\microsoft.netcore.app.runtime.mono.browser-wasm.9.0.0.nupkg.sha512"
+    "C:\\Users\\namxe\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }
