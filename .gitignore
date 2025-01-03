@@ -1,0 +1,20 @@
+# Build Folders
+bin/
+obj/
+
+# User-specific Files
+*.user
+*.swp
+*.suo
+
+# IDE and Build System Files
+.vs/
+.idea/
+.vscode/
+
+# Log Files
+*.log
+
+# Dependency Caches
+.DS_Store
+Thumbs.db
