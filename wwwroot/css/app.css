@@ -2,6 +2,9 @@ html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+
+
+
 h1:focus {
     outline: none;
 }
@@ -127,4 +130,29 @@ code {
 .content {
     flex: 1;
     padding: 16px;
+}
+
+:root {
+    --primary-color: #FFC107; /* Honey Gold */
+    --accent-color: #00796B; /* Teal */
+    --neutral-color: #212121; /* Charcoal Gray */
+    --secondary-color: #FF5252; /* Coral */
+    --background-color: #FAFAFA; /* Light Background */
+    --text-color: #333333; /* Dark Gray */
+}
+
+.honeycomb-bg {
+    background: radial-gradient(circle, var(--primary-color) 20%, transparent 20%) 0 0, radial-gradient(circle, var(--primary-color) 20%, transparent 20%) 10px 10px;
+    background-size: 20px 20px;
+    background-color: var(--background-color);
+}
+
+
+.hexagon {
+    width: 100px;
+    height: 58px;
+    background-color: var(--primary-color);
+    position: relative;
+    margin: 29px 0;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
