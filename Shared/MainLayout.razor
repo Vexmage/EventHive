@@ -1,13 +1,41 @@
 @namespace EventHive.Shared
-
-
 @inherits LayoutComponentBase
 
-<div class="main-layout">
-    <div class="sidebar">
-        <!-- Add navigation or links here if needed -->
+<div class="main-layout d-flex flex-column">
+    <!-- Header -->
+    <header class="bg-primary text-white py-3">
+        <div class="container">
+            <h1 class="mb-0">EventHive</h1>
+        </div>
+    </header>
+
+    <!-- Sidebar and Content -->
+    <div class="d-flex flex-grow-1">
+        <!-- Sidebar -->
+        <nav class="sidebar bg-light border-end p-3">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/events">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="content p-4 flex-grow-1">
+            @Body
+        </main>
     </div>
-    <div class="content">
-        @Body
-    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <p class="mb-0">© 2025 EventHive. All Rights Reserved.</p>
+        </div>
+    </footer>
 </div>

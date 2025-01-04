@@ -1,0 +1,56 @@
+@page "/"
+
+<div class="text-center">
+    <!-- Welcome Section -->
+    <h1>Welcome to EventHive</h1>
+    <p>Manage your events efficiently with our collaborative platform.</p>
+    <a class="btn btn-primary mb-4" href="/events">Get Started</a>
+
+    <!-- Carousel Section -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="images/event-management.jpg" class="d-block w-100" alt="Event Management">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Event Management Simplified</h5>
+                    <p>Organize, plan, and track your events effortlessly.</p>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="images/collaboration.png" class="d-block w-100" alt="Collaboration">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Collaborative Tools</h5>
+                    <p>Work together with your team in real-time.</p>
+                </div>
+            </div>
+            <!-- Slide 3 --> 
+            <div class="carousel-item">
+                <img src="images/offline-access.jpg" class="d-block w-100" alt="Offline Access">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Offline Support</h5>
+                    <p>Access your event details even when offline.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
