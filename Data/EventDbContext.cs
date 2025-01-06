@@ -1,3 +1,5 @@
+using System;
+using System.IO;
 using Microsoft.EntityFrameworkCore;
 
 namespace AccessibleEventTool.Data
@@ -12,10 +14,38 @@ namespace AccessibleEventTool.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            string databasePath = "events.db";
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlite("Data Source=events.db");
+                optionsBuilder.UseSqlite($"Data Source={databasePath}");
             }
+            Console.WriteLine($"Database Path: {Path.GetFullPath(databasePath)}");
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            // Seed data
+            Console.WriteLine("Applying seed data...");
+            modelBuilder.Entity<Event>().HasData(
+                new Event
+                {
+                    Id = 1,
+                    Name = "Annual Tech Conference",
+                    Description = "A conference discussing the latest in technology.",
+                    Date = DateTime.Now.AddDays(10),
+                    Location = "Tech Hall, Silicon Valley"
+                },
+                new Event
+                {
+                    Id = 2,
+                    Name = "Community Cleanup Drive",
+                    Description = "Join us for a community-wide cleanup effort.",
+                    Date = DateTime.Now.AddDays(20),
+                    Location = "Central Park"
+                }
+            );
         }
     }
 
