@@ -1,4 +1,8 @@
 @page "/events"
+@inject EventDbContext DbContext
+@using AccessibleEventTool.Data
+@using Microsoft.EntityFrameworkCore
+
 
 <h2>Manage Your Events</h2>
 
@@ -11,6 +15,8 @@
         <tr>
             <th>Name</th>
             <th>Date</th>
+            <th>Description</th>
+            <th>Location</th>
             <th>Actions</th>
         </tr>
     </thead>
@@ -19,7 +25,9 @@
         {
             <tr>
                 <td>@eventItem.Name</td>
-                <td>@eventItem.Date</td>
+                <td>@eventItem.Date.ToString("yyyy-MM-dd")</td>
+                <td>@eventItem.Description</td>
+                <td>@eventItem.Location</td>
                 <td>
                     <button class="btn btn-primary btn-sm">Edit</button>
                     <button class="btn btn-danger btn-sm">Delete</button>
@@ -30,15 +38,10 @@
 </table>
 
 @code {
-    private List<Event> events = new()
-    {
-        new Event { Name = "Team Meeting", Date = "2025-01-10" },
-        new Event { Name = "Project Deadline", Date = "2025-01-15" }
-    };
+    private List<Event> events = new();
 
-    class Event
+    protected override async Task OnInitializedAsync()
     {
-        public string Name { get; set; }
-        public string Date { get; set; }
+        events = await DbContext.Events.ToListAsync();
     }
 }

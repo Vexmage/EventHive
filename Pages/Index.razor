@@ -1,13 +1,17 @@
 @page "/"
+@inject EventDbContext DbContext
+@using AccessibleEventTool.Data
+@using Microsoft.EntityFrameworkCore
+
+
 
 <div class="text-center">
     <!-- Welcome Section -->
-<div class="honeycomb-bg text-center py-5">
-    <h1>Welcome to EventHive</h1>
-    <p>Manage your events efficiently with our collaborative platform.</p>
-    <a class="btn btn-primary mb-4" href="/events">Get Started</a>
-</div>
-
+    <div class="honeycomb-bg text-center py-5">
+        <h1>Welcome to EventHive</h1>
+        <p>Manage your events efficiently with our collaborative platform.</p>
+        <a class="btn btn-primary mb-4" href="/events">Get Started</a>
+    </div>
 
     <!-- Carousel Section -->
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
@@ -60,6 +64,40 @@
         </button>
     </div>
 </div>
+
+<!-- Upcoming Events Section -->
+<div class="container mt-5">
+    <h2 class="text-center">Upcoming Events</h2>
+    <div class="row mt-4">
+        @foreach (var eventItem in upcomingEvents)
+        {
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">@eventItem.Name</h5>
+                        <p class="card-text">@eventItem.Description</p>
+                        <p class="card-text">
+                            <small class="text-muted">@eventItem.Date.ToShortDateString() - @eventItem.Location</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    private List<Event> upcomingEvents = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        upcomingEvents = await DbContext.Events
+            .Where(e => e.Date >= DateTime.Now)
+            .OrderBy(e => e.Date)
+            .ToListAsync();
+    }
+}
+
 
 <style>
     .carousel-image {

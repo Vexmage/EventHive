@@ -103,6 +103,29 @@ a, .btn-link {
         content: var(--blazor-load-percentage-text, "Loading");
     }
 
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+.card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    color: var(--primary-color);
+}
+
+.card-text {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+}
+
+
 code {
     color: #c02d76;
 }

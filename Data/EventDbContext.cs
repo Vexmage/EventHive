@@ -6,9 +6,16 @@ namespace AccessibleEventTool.Data
     {
         public DbSet<Event> Events { get; set; }
 
+        public EventDbContext(DbContextOptions<EventDbContext> options) : base(options)
+        {
+        }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Data Source=events.db");
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlite("Data Source=events.db");
+            }
         }
     }
 

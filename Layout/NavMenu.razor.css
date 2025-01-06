@@ -33,6 +33,19 @@
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-list-nested' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5z'/%3E%3C/svg%3E");
 }
 
+.bi-calendar3-event-nav-menu {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-calendar3-event' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M3.5.5a.5.5 0 0 1 .5.5v1h8V1a.5.5 0 0 1 1 0v1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V1a.5.5 0 0 1 .5-.5ZM1 5h14v9a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5Zm4.5 6a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-6ZM3 11.5A.5.5 0 0 1 3.5 11h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5ZM9 11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 9 11Z'/%3E%3C/svg%3E");
+}
+
+.bi-people-fill-nav-menu {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-people-fill' viewBox='0 0 16 16'%3E%3Cpath d='M6 7c1.657 0 3-1.343 3-3S7.657 1 6 1 3 2.343 3 4s1.343 3 3 3Zm4.346 0c.807-.34 1.46-1.28 1.46-2.4 0-1.76-1.57-3.2-3.508-3.2-.324 0-.63.03-.916.09a4.37 4.37 0 0 1 1.6 1.31c.644.74.996 1.71.996 2.8 0 .65-.125 1.26-.338 1.79A3.86 3.86 0 0 1 10.346 7ZM8.635 8H11c2.21 0 4 1.565 4 3.5 0 .273-.026.54-.076.8A7.97 7.97 0 0 0 8 12.999V12H2v1c-.345 0-.678-.05-.998-.145.048-.26.074-.527.074-.8 0-1.935 1.79-3.5 4-3.5h3.635ZM5.5 8a6.97 6.97 0 0 0 5.197 2.666A6.97 6.97 0 0 0 5.5 8Z'/%3E%3C/svg%3E");
+}
+
+.bi-gear-fill-nav-menu {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-gear-fill' viewBox='0 0 16 16'%3E%3Cpath d='M8 1a1.5 1.5 0 0 1 1.5 1.5V2h1.086c.23.003.442.06.637.16a1.5 1.5 0 0 1 .388.345l.683.768a1.5 1.5 0 0 1-.042 1.99l-.8.727-.003.002a1.5 1.5 0 0 1-.812.389l-.008.001c-.137.021-.275.046-.412.074a1.5 1.5 0 0 1-.862-.212l-.002-.001-.765-.6a1.5 1.5 0 0 1-.343-.387l-.056-.1-.053.1-.355.6a1.5 1.5 0 0 1-.81.61l-.008.002a1.5 1.5 0 0 1-.85-.2l-.65-.4-.07-.044a1.5 1.5 0 0 1-.598-.8L1 8v-.076a1.5 1.5 0 0 1 .272-.767l.35-.5.027-.04a1.5 1.5 0 0 1 .19-.223l.015-.016a1.5 1.5 0 0 1 .327-.208l.08-.035.055-.02A1.5 1.5 0 0 1 2.86 6h1.086v-.5A1.5 1.5 0 0 1 5.5 4H6V2.5A1.5 1.5 0 0 1 8 1Z'/%3E%3C/svg%3E");
+}
+
+
 .nav-item {
     font-size: 0.9rem;
     padding-bottom: 0.5rem;
