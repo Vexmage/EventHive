@@ -14,13 +14,20 @@ namespace AccessibleEventTool.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string databasePath = "events.db";
+            // Resolve the full database path in a reliable location
+            string databasePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "events.db");
+
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseSqlite($"Data Source={databasePath}");
             }
-            Console.WriteLine($"Database Path: {Path.GetFullPath(databasePath)}");
+
+            // Log the full database path
+            Console.WriteLine($"Database Path: {databasePath}");
         }
+
+
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
