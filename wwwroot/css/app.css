@@ -7,9 +7,9 @@ html, body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 500px; /* Match your section height */
+    height: 500px;
     object-fit: cover;
-    z-index: -1; /* Push behind other content */
+    z-index: -1; 
 }
 
 
@@ -183,14 +183,14 @@ code {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white; /* Ensure text contrasts with the background */
+    color: white;
     padding: 2rem 1rem;
 }
 
 .honeycomb-bg h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add some text shadow */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .honeycomb-bg p {
