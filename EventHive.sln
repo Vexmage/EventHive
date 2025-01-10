@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventHive", "EventHive.cspr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventHive.Migrations", "EventHive.Migrations\EventHive.Migrations.csproj", "{DD36B8A7-4819-4DC9-96B8-54FF29709A55}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventHive.Backend", "EventHive.Backend\EventHive.Backend.csproj", "{AB5F0020-2815-44DC-9BAB-2B7D4B3C212B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{DD36B8A7-4819-4DC9-96B8-54FF29709A55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD36B8A7-4819-4DC9-96B8-54FF29709A55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD36B8A7-4819-4DC9-96B8-54FF29709A55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB5F0020-2815-44DC-9BAB-2B7D4B3C212B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB5F0020-2815-44DC-9BAB-2B7D4B3C212B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB5F0020-2815-44DC-9BAB-2B7D4B3C212B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB5F0020-2815-44DC-9BAB-2B7D4B3C212B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
